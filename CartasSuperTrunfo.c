@@ -8,6 +8,8 @@
 //Desafio Super Trunfo países nivel novato. Registro de cartas 
 */
 int main() {
+    
+    
     printf("Super Trunfo - Paises\n\n");
     
     // Carta 1
@@ -18,6 +20,9 @@ int main() {
     float area1 = 5402.77;
     float pib1 = 718225.81;
     int pontosTuristicos1 = 10;
+    float densidade1 = populacao1 / area1;
+    float pibPerCapita1 = pib1 / populacao1;
+    float superPoder1 = populacao1 + area1 + pib1 + pontosTuristicos1 + pibPerCapita1 + (1 / densidade1);
     
     // Carta 2
     char estado2 = 'B';
@@ -27,6 +32,9 @@ int main() {
     float area2 = 25296.70;
     float pib2 = 400605.91;
     int pontosTuristicos2 = 15;
+    float densidade2 = populacao2 / area2;
+    float pibPerCapita2 = pib2 / populacao2;
+    float superPoder2 = populacao2 + area2 + pib2 + pontosTuristicos2 + pibPerCapita2 + (1 / densidade2);
     
     // Informações Carta 1
     printf("Carta 1:\n");
@@ -37,6 +45,8 @@ int main() {
     printf("Area: %.2f km²\n", area1);
     printf("PIB: %.2f milhares de reais\n", pib1);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
     
     // Informações Carta 2
     printf("\nCarta 2:\n");
@@ -47,8 +57,17 @@ int main() {
     printf("Area: %.2f km²\n", area2);
     printf("PIB: %.2f milhares de reais\n", pib2);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
 
 
+/*===========================================================*/
+
+
+    printf("\n\n=================================\n");
+    printf("\n Obrigado por usar o programa!\n");
+    printf("    Powered by Drix\n\n");
+    printf("=================================\n");
 
 
 
